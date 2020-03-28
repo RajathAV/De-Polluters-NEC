@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  reporter:
+    container_name: my-python-app
+    image: my-python-app:latest
+    environment:
+      - USER=postgres
+      - PASS=postgres  
+      - HOST=db
+      - DB=postgres   
+    ports:
+      - 5000:5000
+        

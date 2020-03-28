@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="refresh" content="5">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Maintainance Dashboard</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+   </head>
+   <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                     <div class="row">
+                        <a class="nav-link" href="/pollutants">
+                        <i class="fa fa-fw fa-dashboard"></i>
+                        <span class="nav-link-text">Pollutants Dashboard</span>
+                        </a>
+                        <a class="nav-link" href="/chamber">
+                        <i class="fa fa-fw fa-dashboard"></i>
+                        <span class="nav-link-text">Manhole Chamber Dashboard</span>
+                        </a>
+						</a>
+				<a class="nav-link" href="/allindia">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Big Picture </span>
+                </a>
+                     </div>
+                     <div class="row">
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/karnataka">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">KARNATAKA</span>
+                                 </a>
+                              </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/ap">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">ANDHRA PRADESH</span>
+                                 </a>
+                              </div>
+                           </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/assam">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">ASSAM</span>
+                                 </a>
+                              </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/arp">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">ARUNACHAL PRADESH</span>
+                                 </a>
+                              
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/bihar">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">BIHAR</span>
+                                 </a>
+                              </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/gj">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">GUJARAT</span>
+                                 </a>
+                              </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/hr">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">HARYANA</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/hp">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">HIMACHAL PRADESH</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/jk">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">JAMMU AND KASHMIR</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/kl">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">KERALA</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/mp">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">MADHYA PRADESH</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/mh">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">MAHARASHTRA</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/mg">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">MEGHALAYA</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/nl">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">NAGALAND</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/ori">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">ORISSA</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/pd">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">PUDUCHERRY</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/pj">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">PUNJAB</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/rj">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">RAJASTHAN</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/karnataka">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">TAMIL NADU</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/tp">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">TRIPURA</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              <a class="nav-link" href="/analytics/up">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">UTTAR PRADESH</span>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                           <div class="card text-white bg-primary o-hidden h-100">
+                              </a></a><a class="nav-link" href="/analytics/wb">
+                              <i class="fa fa-fw fa-dashboard"></i>
+                              <span class="nav-link-text">WEST BENGAL</span>
+                              </a>
+                           </div>
+						   </div>
+                           <div class="col-xl-3 col-sm-6 mb-3">
+                              <div class="card text-white bg-primary o-hidden h-100">
+                                 <a class="nav-link" href="/analytics/ch">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">CHATTISGARH</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-sm-6 mb-3">
+                              <div class="card text-white bg-primary o-hidden h-100">
+                                 <a class="nav-link" href="/analytics/jh">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">JHARKHAND</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-sm-6 mb-3">
+                              <div class="card text-white bg-primary o-hidden h-100">
+                                 <a class="nav-link" href="/analytics/uk">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">UTTARAKHAND</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-sm-6 mb-3">
+                              <div class="card text-white bg-primary o-hidden h-100">
+                                 </a><a class="nav-link" href="/analytics/manipur">
+                                 <i class="fa fa-fw fa-dashboard"></i>
+                                 <span class="nav-link-text">MANIPUR</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+   </body>
+</html>

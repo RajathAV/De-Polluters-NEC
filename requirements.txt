@@ -1,0 +1,5 @@
+flask
+psycopg2==2.7.4 --no-binary=psycopg2
+os
+datetime
+json
