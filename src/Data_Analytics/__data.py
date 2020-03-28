@@ -104,7 +104,7 @@ l = state_data['KARNATAKA'].values.tolist()
 
 import json
 
-out_file = open('data_out','w+')
+out_file = open('data_out.txt','w+')
 
 state_dict = {}
 def list_gen(state):
